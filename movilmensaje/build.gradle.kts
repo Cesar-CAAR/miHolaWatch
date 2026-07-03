@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.miholawatch"
+    namespace = "com.example.movilmensaje"
     compileSdk {
         version = release(37)
     }
@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId = "com.example.miholawatch"
         minSdk = 26
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -33,8 +33,6 @@ android {
 
 dependencies {
     implementation("com.google.android.gms:play-services-wearable:19.0.0")
-    implementation("com.google.android.support:wearable:2.9.0")
-    implementation("com.google.android.wearable:wearable:2.9.0")
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)

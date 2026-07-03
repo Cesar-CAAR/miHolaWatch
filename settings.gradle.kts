@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "miHolaWatch"
 include(":app")
- 
+include(":movilmensaje")

@@ -17,7 +17,17 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
         ctMensaje = findViewById(R.id.ctMensaje)
-        val btnMensaje: Button = findViewById(R.id.btnEnviar)
+        val btnEnviar: Button = findViewById(R.id.btnEnviar)
+
+        btnEnviar.setOnClickListener{
+            val mensaje = ctMensaje.text.toString()
+            if (mensaje.isNotEmpty()){
+                enviarMensajeAlReloj(mensaje)
+            }
+            else{
+                Toast.makeText(this, "Escribe un mensaje a enviar", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     private fun enviarMensajeAlReloj(mensaje: String){
